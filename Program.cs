@@ -1,4 +1,15 @@
-﻿string[] initial_array = { "hello", "2", "world", ":-)" };
+﻿void EnterMassive(string[] array, int SizeOfArray)
+{
+    for (int i=0; i<SizeOfArray; ++i)
+{
+    Console.WriteLine(array[i]);
+}
+}
+
+
+
+
+string[] initial_array = { "hello", "2", "world", ":-)" };
 int number_of_rows_in_the_second_array = 0;
 
 //подсчёт слов, длина которых меньше или равна 3 
@@ -23,3 +34,6 @@ for (int i = 0; i < initial_array.Length; i++)
         count++;
     }
 }
+
+EnterMassive(initial_array,initial_array.Length);
+EnterMassive(modified_array,modified_array.Length);
